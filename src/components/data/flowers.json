@@ -1,0 +1,59 @@
+[
+    {
+        "id": "lavander",
+        "name": "lavander",
+        "price": "$20",
+        "height": "50-70sm",
+        "flowering_period": "second midlle june, july, augest, september, october",
+        "img": "https://media.istockphoto.com/id/522636002/photo/terracotta-flowerpot-of-the-lavander-plant.jpg?s=612x612&w=0&k=20&c=dfUQYXCageR13iht0OxndQzeNeSHu_SsQWYu_tyXXIE="
+    },
+    {
+        "id": "chrysanthemum",
+        "name": "chrysanthemum",
+        "price": "$35",
+        "height": "70-110sm",
+        "flowering_period": "augest, september, october",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Chrysanthemum%2Ckiku%2Ckatori-city%2Cjapan.JPG/1200px-Chrysanthemum%2Ckiku%2Ckatori-city%2Cjapan.JPG"
+    },
+    {
+        "id": "gerberas",
+        "name": "gerberas",
+        "price": "$15",
+        "height": "30-70sm",
+        "flowering_period": "second midlle june, july, augest",
+        "img": "https://i0.wp.com/mrplantgeek.com/wp-content/uploads/2019/05/518829-Gerbera-Mixed-min-1.jpg?fit=1600%2C1789&ssl=1"
+    },
+    {
+        "id": "hydrangea",
+        "name": "hydrangea",
+        "price": "$70",
+        "height": "90-150sm",
+        "flowering_period": "july, augest, september",
+        "img":"https://cdn.shopify.com/s/files/1/0062/8532/8445/products/Annabelle_Hydrangea_1_BB.jpg?v=1573070310&width=1000"
+    },
+    {
+        "id": "lily",
+        "name": "lily",
+        "price": "$25",
+        "height": "30-60sm",
+        "flowering_period": "second midlle june, july, augest",
+        "img": "https://www.hollandbulbfarms.com/Shared/Images/Product/Rozalynn-Asiatic-Lily/77610-rozalynn-asiatic-lily-2.jpg"
+    },
+    {
+        "id": "peony",
+        "name": "peony",
+        "price": "$45",
+        "height": "30-60sm",
+        "flowering_period": "second midlle may, june",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/c/cf/%E6%B4%9B%E9%98%B3%E7%89%A1%E4%B8%B9.jpg"
+    },
+    {
+        "id": "rose",
+        "name": "rose",
+        "price": "$65",
+        "height": "90-180sm",
+        "flowering_period": "second midlle june, july, augest",
+        "img": "https://media.architecturaldigest.com/photos/5747515eff9db5a43d5cfa49/1:1/w_2056,h_2056,c_limit/Orange%20Flare%20Arborose.JPG"
+    }   
+
+]
