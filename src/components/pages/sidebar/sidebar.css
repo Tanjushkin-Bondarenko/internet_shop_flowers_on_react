@@ -1,10 +1,4 @@
 .sidebar{
-    margin: 0;
+
     grid-area: sidebar;
-    width: 20vw;
-  letter-spacing: 0.2em;
-  line-height: 3em;
-  font-weight: 700;
-  font-size: 1.2em;
-  background-color: rgb(228, 250, 250);
 }

@@ -1,6 +1,7 @@
 .contacts{
-    width: 400px;
-    height:80vh;
+    grid-area: main;
+
+    
     margin: 50px 5vw;
 }
 .contacts h3{

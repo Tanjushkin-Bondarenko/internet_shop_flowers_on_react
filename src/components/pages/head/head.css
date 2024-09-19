@@ -1,29 +1,6 @@
 .heder-container{
     grid-area: head;
-    width: 100vw;
-    background-color: hwb(271 80% 2%);
 }
-.name{
-    display: inline-block;
-    padding-left: 5vw;
-    width: 40%;
-    text-transform: uppercase;
-    font-style: italic;
-}
-.name h1{
-    font-size: 2.2em;
-    font-weight: 800;
-    color: rgb(119, 9, 221);
-    letter-spacing: 0.2em;
-    text-shadow:8px 6px rgb(221, 193, 249);
-}
-.name h4{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 0.9em;
-    color: blueviolet;
-}
-.time{
-    display: inline-block;
-    width: 30%;
-    text-align: end;
-}
+
+
+

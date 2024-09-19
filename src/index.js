@@ -1,3 +1,7 @@
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { HomePage } from './components/pages/homePage/HomePage';
@@ -12,6 +16,8 @@ import Error from './components/pages/error/Error';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 
+
+
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -20,13 +26,20 @@ import {
   Outlet
 } from 'react-router-dom';
 
+
+
+
 const Root = () => {
   return (
+  
     <div className='container'>
+     
       <Head />
       <Sidebar />
       <Outlet />
+    
     </div>
+    
   )
 }
 const ourrouter = createBrowserRouter(

@@ -1,28 +1,7 @@
 .flowers{
-    height: 80vh;
-    line-height: 3em;
+    grid-area: main;
 }
-ul{
-    font-size: 1.7em;
-    list-style-type: none;
-}
-a{
-    text-decoration: none;
-}
-.flower-page{
-    width: 500px;
-    text-align: center;
-}
-.flower-page img{
-    width: 200px;
-    height: 200px;
-}
-.back{
-    margin: 2em auto;
-    display: block;
-    border: 1px solid hwb(271 80% 2%);
-    border-radius: 8px;
-    width: 7em;
-    padding: 8px 10px;
-    font-size: 1.5em;
-}
+
+
+
+

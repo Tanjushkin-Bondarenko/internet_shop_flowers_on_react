@@ -1,19 +1,32 @@
 import React from 'react';
-import { Link, useLoaderData } from 'react-router-dom';
+import { Link as RouterLink, useLoaderData } from 'react-router-dom';
 import "./flower.css";
+import { Box, Typography, Link, ImageListItem, Paper, Container } from '@mui/material';
 
 export default function FlowerPage() {
     const flower = useLoaderData();
   return (
-    <div>
-         <Link className='back' to="/flowers">Back to catalog</Link>
-      <div className='flower-page'>
-          <img src={flower.img}></img>
-          <h3>{ flower.name}</h3>
-          <h4>Price: {flower.price}</h4>
-          <p>flower heigth: {flower.height}</p>
-          <p>Period flowering: {flower.flowering_period }</p>
-      </div>
-      </div>
+    <Container className='flower-page'>
+    <Box sx={{width: '77vw',display:'flex', flexDirection:'column', alignItems: 'center'}}>
+         <Link component={RouterLink}
+          variant='button' 
+          sx={{ width:'fit-content', alignSelf:'end', textDecoration: 'none',
+            p: '10px 7px',m:'20px'}}
+          to="/flowers">Back to catalog</Link>
+      <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+         <ImageListItem  sx={{width: '200px', height: '200px', alignSelf:'center'}}>
+              <img  
+              alt='flowers' src={flower.img}>
+              </img>
+          </ImageListItem>
+          <Paper sx={{p: '20px', gap: '10px'}}>
+            <Typography variant='h3'>{ flower.name}</Typography>
+            <Typography variant='h4'>Price: {flower.price}</Typography>
+            <Typography>flower heigth: {flower.height}</Typography>
+            <Typography>Period flowering: {flower.flowering_period }</Typography>
+          </Paper>
+      </Box>
+      </Box>
+      </Container> 
   )
 }
