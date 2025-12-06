@@ -2,7 +2,7 @@
   "name": "routinghw",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://flower-shop.github.io/react-gh",
+  "homepage": "https://Tanjushkin-Bondarenko.github.io/flower-shop",
   "dependencies": {
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
@@ -26,7 +26,7 @@
     "build": "vite build",
     "test": "react-scripts test",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
