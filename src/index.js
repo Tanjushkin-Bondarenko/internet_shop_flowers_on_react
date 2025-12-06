@@ -15,8 +15,6 @@ import Error from './components/pages/error/Error';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 
-
-
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -25,52 +23,45 @@ import {
   Outlet
 } from 'react-router-dom';
 
-
-
-
 const Root = () => {
-  return (
-  
+  return (  
     <div className='container'>
-     
       <Head />
       <Sidebar />
       <Outlet />
-    
     </div>
-    
   )
 }
 const ourrouter = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<Root />}>
+<Route path='/' element={<Root />}>
       <Route index element={<HomePage />} />
-      <Route path='flowers/' element={<Flowers />} />
-      <Route path='flowers/:flowerId' loader={loader} element={<FlowerPage />} errorElement={<Error /> } />
+        <Route path='flowers' element={<Flowers />} />
+      <Route path="flowers/:flowerId"
+          loader={loader}
+          element={<FlowerPage />}
+          errorElement={<Error />}
+        />
+      
+
       <Route path='contacts' element={<Contacts />} />
       <Route path='article' element={<Article />} />
       <Route path='*' element={<Error />} />
-     </Route> 
+      </Route> 
   )
+
 )
  
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-
  <RouterProvider router = {ourrouter} />
- 
-   
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
-function loader({ params }) {
-
-  const flower = flowersInfo.filter(e => e.id === params.flowerId)
-    return flower[0]
-  
+async function loader({ params }) {
+  const flower = flowersInfo.find(element => element.id === params.flowerId)
+  if (!flower) throw new Response("Not found", { status: 404 })
+  return flower
   
 }

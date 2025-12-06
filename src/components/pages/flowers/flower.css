@@ -1,5 +1,6 @@
 .flowers{
     grid-area: main;
+    justify-content: flex-start;
 }
 
 

@@ -1,13 +1,14 @@
-import React from 'react';
 import { Link as RouterLink, useLoaderData } from 'react-router-dom';
 import "./flower.css";
 import { Box, Typography, Link, ImageListItem, Paper, Container } from '@mui/material';
 
 export default function FlowerPage() {
-    const flower = useLoaderData();
+  const flower = useLoaderData();
+  console.log(flower)
   return (
     <Container className='flower-page'>
-    <Box sx={{width: '77vw',display:'flex', flexDirection:'column', alignItems: 'center'}}>
+      <Box sx={{  width: '700px', display: 'flex', flexDirection: 'column', alignItems: 'center'
+      }}>
          <Link component={RouterLink}
           variant='button' 
           sx={{ width:'fit-content', alignSelf:'end', textDecoration: 'none',

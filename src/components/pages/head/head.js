@@ -1,7 +1,7 @@
 import React from 'react';
 import './head.css';
 import { Link  } from "react-router-dom";
-import { Box,  Container,  ThemeProvider,  Typography,createTheme } from '@mui/material';
+import { Box, ThemeProvider,  Typography,createTheme } from '@mui/material';
 
 
 const nameTheme = createTheme();

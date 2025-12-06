@@ -1,4 +1,3 @@
-import React from 'react'; 
 import "./article.css"
 import {Typography,createTheme, Box,ThemeProvider, Paper } from "@mui/material"
 

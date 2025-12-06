@@ -1,4 +1,3 @@
-import React from 'react';
 import './homepage.css'
 import { Box,createTheme, Paper, ThemeProvider, Typography } from '@mui/material';
 
@@ -16,7 +15,7 @@ const theme = createTheme();
 
 export const HomePage = () => {
   return (
-      <Box sx={{p: 0, m:0, width: '77wv'}} className='home'>
+      <Box sx={{p: 0, m:0, width: '770px'}} className='home'>
         <ThemeProvider theme={theme}>
         <Typography variant="h4"> Flowers are the best gift</Typography>
         </ThemeProvider>
