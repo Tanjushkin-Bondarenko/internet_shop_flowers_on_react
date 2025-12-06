@@ -14,7 +14,7 @@ import flowersInfo from './components/data/flowers.json';
 import Error from './components/pages/error/Error.jsx';
 import reportWebVitals from './reportWebVitals';
 import { Container } from '@mui/material';
-import './index.css';
+import './style.css';
 
 import {
   createBrowserRouter,
