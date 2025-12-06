@@ -24,6 +24,7 @@
   "scripts": {
     "dev": "vite",
     "start": "react-scripts start",
+    "clean": "rimraf dist",
     "build": "vite build",
     "test": "react-scripts test",
     "predeploy": "npm run build",
@@ -49,6 +50,7 @@
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
+    "rimraf": "^6.1.2",
     "vite": "^7.2.6"
   }
 }
