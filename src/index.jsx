@@ -5,14 +5,15 @@ import '@fontsource/roboto/700.css';
 import ReactDOM from 'react-dom/client';
 import { HomePage } from './components/pages/homePage/HomePage';
 import { Head } from './components/pages/head/head';
-import { Sidebar } from './components/pages/sidebar/sidebar';
+import { Sidebar } from './components/pages/sidebar/Sidebar';
 import { Flowers } from './components/pages/flowers/Flowers';
 import FlowerPage from './components/pages/flowers/FlowerPage';
 import { Article } from './components/pages/article/Article';
-import { Contacts } from './components/pages/contacts/contacts';
+import { Contacts } from './components/pages/contacts/Contacts';
 import flowersInfo from './components/data/flowers.json';
 import Error from './components/pages/error/Error';
 import reportWebVitals from './reportWebVitals';
+import { Container } from '@mui/material';
 import './index.css';
 
 import {
@@ -25,11 +26,11 @@ import {
 
 const Root = () => {
   return (  
-    <div className='container'>
+    <Container className='container'>
       <Head />
       <Sidebar />
       <Outlet />
-    </div>
+    </Container>
   )
 }
 const ourrouter = createBrowserRouter(
