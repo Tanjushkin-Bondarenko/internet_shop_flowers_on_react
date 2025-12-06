@@ -2,7 +2,6 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { HomePage } from './components/pages/homePage/HomePage';
 import { Head } from './components/pages/head/head';
@@ -57,7 +56,10 @@ const ourrouter = createBrowserRouter(
  
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+
  <RouterProvider router = {ourrouter} />
+ 
+   
 );
 
 // If you want to start measuring performance in your app, pass a function
