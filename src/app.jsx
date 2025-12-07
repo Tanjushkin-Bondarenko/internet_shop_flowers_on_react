@@ -8,11 +8,11 @@ import { Head } from './components/pages/head/Head.jsx';
 import { Sidebar } from './components/pages/sidebar/Sidebar.jsx';
 import { Flowers } from './components/pages/flowers/Flowers.jsx';
 import FlowerPage from './components/pages/flowers/FlowerPage.jsx';
-import { Article } from './components/pages/article/Article';
+import { Article } from './components/pages/article/Article.jsx.jsx.jsx';
 import { Contacts } from './components/pages/contacts/Contacts.jsx';
 import flowersInfo from './components/data/flowers.json';
 import Error from './components/pages/error/Error.jsx';
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from './reportWebVitals.js.js.js';
 import { Container } from '@mui/material';
 import './style.css';
 
@@ -49,7 +49,10 @@ const ourrouter = createBrowserRouter(
       <Route path='article' element={<Article />} />
       <Route path='*' element={<Error />} />
       </Route> 
-  )
+  ), 
+  {
+    basename: "/internet_shop_flowers_on_react",
+  }
 
 )
  

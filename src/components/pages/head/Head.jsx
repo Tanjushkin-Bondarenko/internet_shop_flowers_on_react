@@ -20,7 +20,7 @@ export const Head = () => {
       <Link to="/">
       <Box sx={{textTransform: "uppercase",  pl: "5vw" }}>
           <ThemeProvider theme={nameTheme}>
-            <Typography variant='h2'> Flower shop</Typography>
+            <Typography variant='h2'> Flower`s shop</Typography>
             </ThemeProvider>
           <Typography sx={{pl: "5vw"}} 
           variant='h6'>Best flower shop in your city</Typography>
